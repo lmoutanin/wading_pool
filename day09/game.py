@@ -5,11 +5,8 @@ import random
 import numpy as np
 import pygame
 
-screen = pygame.display.set_mode((1280, 720))
-penalties = 0
+screen = None
 check_word = []
-msgX = ''
-msgY = ''
 
 
 def button_interface(name, btn_color, txt_color, pos, size):
@@ -164,5 +161,6 @@ def check(word):
         write_file('Models/data.json', data)
         msgX = 'GAME OVER'
         msgY = f"The word was '{x}'."
+        check_game = False
 
     return msgX, msgY, check_game

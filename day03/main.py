@@ -1,26 +1,23 @@
-
-
 # Task  1.1
 
-longString =  'In addition to the tasks below, you must go as far as possible in this game.'
+longString = 'In addition to the tasks below, you must go as far as possible in this game.'
 # print(a)
 
-#Task 1.2
+# Task 1.2
 # print(longString[0])
 # print(longString[12])
 
-#Task 1.3
+# Task 1.3
 # print(longString[-1])
 
-#Task 1.4
+# Task 1.4
 print(longString[4:9])
 
-
-#Task 2.1
-longString =  longString.lower()
+# Task 2.1
+longString = longString.lower()
 print(longString)
 
-#Task 2.2
+# Task 2.2
 # sentence = 'tutu on the tuki-kata'
 # newSentence = ''
 #
@@ -37,23 +34,23 @@ print(longString)
 # position = string.find('a')
 # print(position)
 
-#Task 2.4
+# Task 2.4
 # p = "abcdefghij"
 # print (p [3:])
 
-#Task 2.6
+# Task 2.6
 # for i in range(10):
 #     print(str(i+1)+' : '+p)
 
 # Task 2.7
 # print("hello "+str(42))
 
-#Task 2.8
+# Task 2.8
 # s1,s2,s3 = "42" ,"is","the answer"
 # sentence = s3 +' '+s2+' '+s1
 # print(sentence +' contains '+str(len(sentence))+' '+'characters.')
 
-#Challenge
+# Challenge
 
 # CHECK_LIST = ['cat','garden','mice']
 # newSentence = "the CataCat attaCk a Cat"
@@ -75,16 +72,16 @@ print(longString)
 #
 # print(countWord(newSentence))
 
-#Task 3.1
+# Task 3.1
 
 # user = input('What is your name : ').capitalize()
 # print('Hello '+user)
 
-#Task 3.2
+# Task 3.2
 # number = input('Enter your number : ')
 # print('The type is '+str(type(number)))
 
-#Task 3.3
+# Task 3.3
 
 # sum = 0
 # for i in range(2) :
@@ -102,12 +99,3 @@ print(longString)
 #     return word
 #
 # print(extractWord())
-
-
-
-
-
-
-
-
-

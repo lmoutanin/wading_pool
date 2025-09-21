@@ -8,13 +8,14 @@ def main():
     main_color = 'white'
     pygame.init()
     word = game.random_word_list()
+    game.screen = pygame.display.set_mode((1280, 720))
     screen = pygame.display.set_mode((1280, 720))
     clock = pygame.time.Clock()
     running = True
     check_game = True
     mp = []
-    msgX = game.msgX
-    msgY = game.msgY
+    msgX = ''
+    msgY = ''
     word = game.random_word_list()
     game.button_texts = []
     game.buttons = []
@@ -36,12 +37,17 @@ def main():
     pygame.display.set_caption('HANGMAN')
     pygame.display.flip()
 
+    TIMEREVENT = pygame.USEREVENT + 1
+    pygame.time.set_timer(TIMEREVENT, 1000)
+
     while running:
         # poll for events
         # pygame.QUIT event means the user clicked X to close your window
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+
             if event.type == pygame.MOUSEBUTTONDOWN:
                 for i, button in enumerate(game.buttons):
                     if check_game:

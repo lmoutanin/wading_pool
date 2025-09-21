@@ -15,13 +15,8 @@
 #     print(test1(table1[i]))
 
 n = 201
-sumx =  6 + n ** 2
-for i in reversed(range(3,n,2)):
-    sumx = 6 + ((i ** 2)/sumx)
+sumx = 6 + n ** 2
+for i in reversed(range(3, n, 2)):
+    sumx = 6 + ((i ** 2) / sumx)
 
-
-print((1**2)/sumx)
-
-
-
-
+print((1 ** 2) / sumx)
